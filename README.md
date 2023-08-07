@@ -1,5 +1,9 @@
 # Scratch CLI
 
+NOTE: This is just a fun project i'm working on, and should not be used for production !
+
+![Logo of Scratch Frameword](https://djemai-samy.com/projects/personal/scratch/scratch.png)
+
 The Scratch CLI is a command-line tool designed to enhance your workflow and simplify the process of starting and building React applications using Server-Side Rendering (SSR) and client-side rendering.
 
 With a set of simple commands, you can create, configure, start and build your React App.

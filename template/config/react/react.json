@@ -1,0 +1,22 @@
+{
+	"folder": "src/React",
+	"server": {
+		"entry": "main.js",
+		"output": {
+      "name" :"server.js",
+      "folder": ".scratch/entries"
+    }
+	},
+	"client": {
+		"entry": "main.js",
+		"output": {
+			"name": "client.js",
+			"folder": "public",
+			"styles": "styles.css"
+		},
+		"dev": {
+			"url": "http://localhost:3000",
+			"port": "3000"
+		}
+	}
+}
