@@ -1,0 +1,14 @@
+{
+  "controllers": {
+    "resource": {
+      "path": "/src/Controller",
+      "namespace": "App\\Controller"
+    }
+  },
+  "views": {
+    "resource": {
+      "path": "/src/View",
+      "namespace": "App\\View"
+    }
+  }
+}

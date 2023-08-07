@@ -1,0 +1,13 @@
+RewriteEngine on
+SetEnv APP_MODE development
+# Rewrite requests for static files to /public folder
+RewriteCond %{REQUEST_URI} !^/public/ [NC]
+RewriteRule ^(.+\.(css|js|png|jpg|gif|svg|ico))$ /public/$1 [L]
+
+# Redirect root requests to /public/index.php
+RewriteRule ^$ /public/index.php [L]
+
+# Rewrite non-existing files to /public/index.php with 'url' parameter
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /public/index.php?url=$1 [NC,L,QSA]

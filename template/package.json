@@ -1,0 +1,17 @@
+{
+	"name": "app",
+	"version": "1.0.0",
+	"main": "/src/React/main.js",
+	"scripts": {
+		"start": "scratch start",
+		"build": "scratch build",
+		"ping": "echo Pong"
+	},
+	"dependencies": {
+    "scratch-sr" : "*"
+  },
+	"devDependencies": {
+    "scratch-sr-cli" : "*"
+  },
+	"license": "MIT"
+}

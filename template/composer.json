@@ -1,0 +1,19 @@
+{
+	"name": "app/app",
+	"type": "project",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"App\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "samy djemai",
+			"email": "samy.djemai93@gmail.com"
+		}
+	],
+	"require": {
+		"scratch/scratch": "dev-main"
+	}
+}
