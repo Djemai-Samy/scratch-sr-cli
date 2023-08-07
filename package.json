@@ -1,7 +1,7 @@
 {
 	"name": "scratch-sr-cli",
 	"description": "The Scratch CLI is a command-line tool designed to enhance your workflow while working with the Scratch PHP framework and React applications.",
-	"version": "1.0.0-beta.3",
+	"version": "1.0.0-beta.4",
 	"license": "MIT",
 	"main": "./bin/index.js",
 	"types": "./bin/index.d.ts",

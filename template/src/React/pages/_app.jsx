@@ -1,6 +1,6 @@
 import "../style.css";
 import classes from "../App.module.css";
-import { Head, Link } from "scratch-ssr";
+import { Head, Link } from "scratch-sr";
 const index = ({ children }) => {
 	return (
 		<>
