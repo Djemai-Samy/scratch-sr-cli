@@ -11,7 +11,7 @@
     "scratch-sr" : "1.0.0-beta.1"
   },
 	"devDependencies": {
-    "scratch-sr-cli" : "1.0.0-beta.1"
+    "scratch-sr-cli" : "1.0.0-beta.2"
   },
 	"license": "MIT"
 }
