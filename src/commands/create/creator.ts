@@ -13,6 +13,7 @@ import { error } from "../../utils/log.js";
 import { PROJECT_FS, TEMPLATE_FOLDER_PATH } from "../../utils/config.js";
 import { join } from "path";
 import { spawnCommandSync } from "../../utils/commands.js";
+import { ROOT } from "../../index.js";
 
 const ROOT_PATH = join(getDirName(import.meta.url), "../../");
 
@@ -59,11 +60,17 @@ export default async ({ input, flags }: { input: string[]; flags: ManagerFlags }
 
 	// Function to update package.json and composer.json with the project name
 	const updatePackagesName = async () => {
+		// Get version of scratch-sr-cli
+		const cliVersion = filesystem.readJsonFile(join(ROOT, "..", "package.json")).version;
 		// Update package.json
 		spinner.start(`${t(text.common.info.updating)} package.json ...`);
 		await updateJsonFile(`./${appName}/package.json`, (jsonData) => ({
 			...jsonData,
 			name: appName,
+			devDependencies: {
+				...jsonData.devDependencies,
+				"scratch-sr-cli": cliVersion,
+			},
 		}));
 		spinner.succeed(`${t(text.common.info.updated)} package.json !`).stop();
 
@@ -145,7 +152,7 @@ export default async ({ input, flags }: { input: string[]; flags: ManagerFlags }
 	};
 
 	// Function to update react.json with the dev server URL
-	const updateConfigPHPServer = async (port: string|null) => {
+	const updateConfigPHPServer = async (port: string | null) => {
 		spinner.start(t(text.php.info.updating));
 		await updateJsonFile(
 			join(
@@ -231,7 +238,7 @@ export default async ({ input, flags }: { input: string[]; flags: ManagerFlags }
 		askInstallDependencies,
 		installDependencies,
 		getWebpackPort,
-    askPHPServer,
+		askPHPServer,
 		getPHPPort,
 		updateConfigURLDevServer,
 		updateConfigPHPServer,

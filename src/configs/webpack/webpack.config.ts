@@ -52,6 +52,7 @@ export default async (env: { APP_DIR: string }, argv: { mode: string }) => {
 			},
 			compress: true,
 			historyApiFallback: true,
+      hot: isDev
 		},
 
 		plugins: [
