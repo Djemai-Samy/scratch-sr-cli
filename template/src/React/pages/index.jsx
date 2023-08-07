@@ -1,5 +1,5 @@
 import React from "react";
-import { Head, useData } from "scratch-ssr";
+import { Head, useData } from "scratch-sr";
 import phpLogo from "../assets/scratch_logo.svg";
 import reactLogo from "../assets/react-logo.svg";
 export default function index(props) {

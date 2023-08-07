@@ -1,5 +1,5 @@
 // Import necessary functions from the "scratch" library
-import { renderApp } from "scratch-ssr";
+import { renderApp } from "scratch-sr";
 
 // Import the main application component and other page components
 // import App from "./app/App";

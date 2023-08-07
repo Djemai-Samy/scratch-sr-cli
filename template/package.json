@@ -8,10 +8,10 @@
 		"ping": "echo Pong"
 	},
 	"dependencies": {
-    "scratch-sr" : "*"
+    "scratch-sr" : "1.0.0-beta.1"
   },
 	"devDependencies": {
-    "scratch-sr-cli" : "*"
+    "scratch-sr-cli" : "1.0.0-beta.1"
   },
 	"license": "MIT"
 }
